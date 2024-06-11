@@ -9,7 +9,7 @@
 //                                {n}
 
 
-//----------Character Class----------//
+            //----------Character Class----------//
 
 // l[yi]nk             // link and lynk
 // \d{3}[-.]\d{3}\d{4} // 123-456-7890 and 123.456.7890 
@@ -26,3 +26,15 @@
 
 // (\w+),\s+(\w+) // replacing word
 // $2  $1
+
+
+//----------Matching Links----------//
+
+// \[(.*?\)]\((http.*?\)\)//Matching link
+// <a href="$2">$1</a>
+
+
+
+           //----------Back Refrence----------//
+
+// \b(\w+)\s\1\b  //Finding double word          
