@@ -31,6 +31,17 @@ function newText() {
 }
 
 
+function newText(){
+    var s = textfield.value();
+    // var r = /[.,!?\s]+/g;
+    var r = /(\w+)/g;
+    var word = s.split(r);
+    console.log(word);
+    for(var i =0 ;i<word.length;i++){
+        createP(word[i] );
+    }
+}
+
 //---console---//
 // var r = /\d{3}/;
 
