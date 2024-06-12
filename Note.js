@@ -12,7 +12,7 @@
             //----------Character Class----------//
 
 // l[yi]nk             // link and lynk
-// \d{3}[-.]\d{3}\d{4} // 123-456-7890 and 123.456.7890 
+// \d{3}[-.]\d{3}\d{4} // 123-456-7890 and 123-xxx-xxxx 
 
 // \(?\d{3}[-.)]\d{3}[-.]\d{4} //(212)867-5509
 
@@ -36,5 +36,5 @@
 
 
            //----------Back Refrence----------//
-
+// input: my myy name is is Arman
 // \b(\w+)\s\1\b  //Finding double word          
