@@ -16,7 +16,14 @@ function newText() {
 
     // var r = /\w+@\w+\.(net|com|org)/;
     var r = /(\d{3})[-.]\d{4}/g;
-    var matches = s.match(r);
+    // var matches = s.match(r);
+
+    // var result = r.exec(s);
+    var results;
+    while (result = r.exec(s)) {
+        createP(result[1]);
+        // result = r.exec(s);
+    }
 
     for (var i = 0; i < matches.length; i++) {}
     // createP(r.test(s));
